@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+</head>
+  <body>
+    <h2>Form</h2>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+        <input type="image" src="" alt="Submit" width="48" height="48">
+        <br> <br> <br> <br> <br> 
+      </form>
+
+      <form action="/action_page.php">
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <input type="submit" value="Submit"><br> <br> <br> <br> <br>
+      </form>
+      <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      </form><br> <br> <br> <br> <br>
+
+      <form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"> 
+</form><br> <br> <br> <br> <br>
+
+
+<form>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"> 
+</form>
+  </body>
+</html>
